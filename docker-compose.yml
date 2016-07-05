@@ -1,0 +1,9 @@
+php:
+  build: .
+  links:
+    - redis:redis
+  ports:
+    - "8080:8080"
+
+redis:
+  image: redis
